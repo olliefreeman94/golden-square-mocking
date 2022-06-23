@@ -15,8 +15,10 @@ RSpec.describe "musiclibrary integration" do
     library = MusicLibrary.new
     track1 = Track.new("foo track", "artist1")
     track2 = Track.new("bar track", "artist2")
+    track3 = Track.new("baz track", "foo artist")
     library.add(track1)
     library.add(track2)
-    expect( library.search("foo") ).to eq [track1]
+    library.add(track3)
+    expect( library.search("foo") ).to eq [track1, track3]
   end
 end

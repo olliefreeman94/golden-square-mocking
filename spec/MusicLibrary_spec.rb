@@ -16,6 +16,6 @@ RSpec.describe MusicLibrary do
     track2 = double(:track, matches?: false)
     library.add(track1)
     library.add(track2)
-    expect( library.search("") ).to eq [track1]
+    expect( library.search("keyword") ).to eq [track1]
   end
 end

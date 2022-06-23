@@ -12,6 +12,8 @@ RSpec.describe MusicLibrary do
 
   it "returns list of objects matching keyword" do
     library = MusicLibrary.new
+    # track1 = double :track
+    # allow(track1).to receive(:matches?).with("keyword").and_return true
     track1 = double(:track, matches?: true)
     track2 = double(:track, matches?: false)
     library.add(track1)

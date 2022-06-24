@@ -1,0 +1,1 @@
+Diary = Struct.new(:contents)

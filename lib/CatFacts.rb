@@ -18,5 +18,5 @@ class CatFacts
   end
 end
 
-cat_facts = CatFacts.new
-puts cat_facts.provide
+# cat_facts = CatFacts.new
+# puts cat_facts.provide

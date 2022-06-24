@@ -24,5 +24,5 @@ class TimeError
   end
 end
 
-time_checker = TimeError.new
-puts time_checker.error
+# time_checker = TimeError.new
+# puts time_checker.error
